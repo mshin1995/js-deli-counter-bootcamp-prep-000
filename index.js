@@ -1,6 +1,12 @@
-function takeANumber(katzDeliLine, name) {
-  katzDeliLine.push(name)
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+// function takeANumber(katzDeliLine, name) {
+//   katzDeliLine.push(name)
+//   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+// }
+var counter = 0
+function takeANumber(katzDeliLine) {
+  counter++
+  katzDeliLine.push(counter)
+  return `Welcome, ${counter}. You are number ${katzDeliLine.length} in line.`
 }
 function nowServing(katzDeliLine){
   if (katzDeliLine.length === 0) {return "There is nobody waiting to be served!"}
